@@ -54,7 +54,7 @@ public class CrabWorld extends World
         
         if (theScore.getScore() % 100 == 0 || theScore.getScore() % 100 == 5)
         {
-            if (getObjects(Lobster.class).size() < theScore.getScore() / 50)
+            if (getObjects(Lobster.class).size() < theScore.getScore() / 100 + 1)
                 addObject(new Lobster(), randomXL, randomYL);
         }
         if (theScore.getScore() % 50 == 0 || theScore.getScore() % 50 == 5)
