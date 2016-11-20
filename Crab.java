@@ -15,7 +15,7 @@ public class Crab extends Animal
         {
             turn();
             move(3);
-            touchWorm(300);
+            touchWorm(10);
             touchLobster();
         }
     }
@@ -46,10 +46,13 @@ public class Crab extends Animal
     }
     public void gameWin ()
     {
-        World world = getWorld();
-        gameover = true;
-        RestartButton restart = new RestartButton();
-        world.showText("You Win!", world.getWidth()/2, world.getHeight()/3 - 40);
-        world.addObject(restart, world.getWidth()/2, world.getHeight()/3 + 20);
+        if (!gameover)
+        {
+            World world = getWorld();
+            gameover = true;
+            RestartButton restart = new RestartButton();
+            world.showText("You Win!", world.getWidth()/2, world.getHeight()/3 - 40);
+            world.addObject(restart, world.getWidth()/2, world.getHeight()/3 + 20);
+        }
     }
 }
