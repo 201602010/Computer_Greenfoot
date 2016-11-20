@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Animal extends Actor
 {
-    public void turn ()
+    public void randomTurn ()
     {
         if (isAtEdge())
         {

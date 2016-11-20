@@ -2,5 +2,9 @@
 comment0.target=Animal
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Animal\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ turn()
-numComments=2
+comment1.target=void\ randomTurn()
+comment2.params=score
+comment2.target=void\ touchWorm(int)
+comment3.params=amount
+comment3.target=void\ updateScore(int)
+numComments=4

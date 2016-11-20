@@ -33,4 +33,16 @@ public class Crab extends Animal
             getWorld().addObject(restart, getWorld().getWidth()/2, getWorld().getHeight()/3 + gameOver.getImage().getHeight() + 20 );
         }
     }
+    public void turn ()
+    {
+        if (Greenfoot.isKeyDown("left"))
+        {
+            this.turn (-4);
+        }
+        if (Greenfoot.isKeyDown("right"))
+        {
+            this.turn (4);
+        }
+        super.randomTurn();
+    }
 }

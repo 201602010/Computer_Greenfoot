@@ -14,7 +14,7 @@ public class Lobster extends Animal
      */
     public void act() 
     {
-        turn();
+        randomTurn();
         move(2);
         touchWorm(-5);
     }    
