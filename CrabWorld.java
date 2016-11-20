@@ -14,6 +14,7 @@ public class CrabWorld extends World
      * 
      */
     private Score theScore;
+    Crab crab = new Crab();
     public Score getScore() {
         return theScore;
     }
@@ -64,11 +65,14 @@ public class CrabWorld extends World
         
     }
     private void start() {
-        Crab crab = new Crab();
         addObject(crab, 280, 280);
         crab.setLocation(396, 75);
         Lobster lobster = new Lobster();
         addObject(lobster, 560, 560);
         lobster.setLocation(75, 396);
+    }
+    public Crab getPlayer ()
+    {
+        return crab;
     }
 }

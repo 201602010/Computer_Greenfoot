@@ -39,5 +39,10 @@ public class Animal extends Actor
         CrabWorld world = (CrabWorld) getWorld();
         Score counter = world.getScore();
         counter.bumpCount (amount);
+        if (counter.getScore() >= 500)
+        {
+            Crab crab = world.getPlayer();
+            crab.gameWin();
+        }
     }
 }
